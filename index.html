@@ -3,25 +3,27 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=100%, initial-scale=1">
-        <title>与江叔叔聊天中</title>
+        <title>ISTI SAYANG</title>
         <link href="css/main.min.css" rel="stylesheet" type="text/css">
         <link rel="Shortcut Icon" href="favicon.ico"/>
-        <link rel="preload" href="img/love-the-girl.jpg" as="image">
-        <link rel="preload" href="img/news-wuhanfeiyan.jpg" as="image">
-        <link rel="preload" href="img/separate.jpeg" as="image">
-        <link rel="preload" href="img/in-sichuan.jpeg" as="image">
-        <link rel="preload" href="img/lucky-me.jpg" as="image">
-        <link rel="preload" href="img/breakfast.jpg" as="image">
-        <link rel="preload" href="img/exercise-together.jpg" as="image">
-        <link rel="preload" href="img/travel.jpg" as="image">
-        <link rel="preload" href="img/foot.jpg" as="image">
-        <link rel="preload" href="img/marry-me.png" as="image">
-        <link rel="preload" href="img/kiss-my-princess.png" as="image">
+        <link rel="preload" href="img/cfdate.jpg" as="image">
+        <link rel="preload" href="img/skating1.jpg" as="image">
+        <link rel="preload" href="img/skating2.jpg" as="image">
+        <link rel="preload" href="img/selfie1.jpg" as="image">
+        <link rel="preload" href="img/senen.jpg" as="image">
+        <link rel="preload" href="img/kucing1.jpg" as="image">
+        <link rel="preload" href="img/wisuda1.jpg" as="image">
+        <link rel="preload" href="img/wisuda2.jpg" as="image">
+        <link rel="preload" href="img/bocil1.jpg" as="image">
+        <link rel="preload" href="img/macet1.jpg" as="image">
+        <link rel="preload" href="img/sayang1.jpg" as="image">
+        <link rel="preload" href="img/djarum1.jpg" as="image">
+        <link rel="preload" href="img/ig1.jpeg" as="image">
     </head>
     <body>
         <div id="mobile" :class="{ 'has-prompt': hasPrompt }">
             <div id="mobile-head">
-                <div id="mobile-head-title">与江叔叔聊天中</div>
+                <div id="mobile-head-title">ISTI SAYANG</div>
             </div>
             <div id="mobile-body">
                 <div id="mobile-body-bg"></div>
@@ -43,7 +45,7 @@
             <div id="mobile-foot">
                 <div id="prompt">
                     <div id="prompt-head">
-                        <div class="say-something">我想说……</div>
+                        <div class="say-something">Message……</div>
                         <a href="javascript:;" class="close-btn"
                             v-on:click="togglePrompt(false)"></a>
                     </div>
@@ -66,17 +68,11 @@
                 <div id="input-hint" class="say-something"
                     v-on:click="togglePrompt(true)"
                     :class="{'clickable': !isTyping }">
-                    <span v-if="!isTyping">我想说……</span>
-                    <span v-if="isTyping">江叔叔正在输入中</span>
+                    <span v-if="!isTyping">Message……</span>
+                    <span v-if="isTyping">adit typing</span>
                 </div>
             </div>
             <div id="prompt-bg" v-on:click="togglePrompt(false)"></div>
-        </div>
-
-        <div class="extra-link" id="meta-link">
-            <a class="letters" href="https://github.com/wongjohn/for-my-love" target="_blank">
-                源码
-            </a>
         </div>
 
         <script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
